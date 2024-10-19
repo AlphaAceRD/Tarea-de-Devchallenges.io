@@ -1,0 +1,120 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0; /* Cambiado a 0 para evitar márgenes no deseados */
+    padding: 0; /* Cambiado a 0 para evitar rellenos no deseados */
+    font-family: "Outfit", sans-serif;
+}
+h1,h4 {
+    text-align: center;
+}
+
+.outfit-h1 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+}
+  
+.outfit-h4 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+}
+  
+body {
+    padding: 20px;
+    background-color: #121826;
+    background-image: url('Background_image.svg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #E5E7EB;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el contenido a la izquierda */
+    background-color: #212936;
+    border: 1px solid #9DA3AE;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    min-width: 250px;
+    text-align: left; /* Alinear texto a la izquierda */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    background-color: #121826; /* Color de fondo al hacer hover */
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; /* Centrar el contenido dentro del círculo */
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Hacer que el ícono esté en un círculo */
+    color: #fff;
+    margin-right: 15px; /* Espaciado a la derecha del ícono */
+}
+
+/* Estilo individual para cada ícono */
+.icon-1 {
+    background-color: #ffcccb; /* Color de fondo del círculo del ícono 1 */
+}
+
+.icon-2 {
+    background-color: #add8e6; /* Color de fondo del círculo del ícono 2 */
+}
+
+.icon-3 {
+    background-color: #90ee90; /* Color de fondo del círculo del ícono 3 */
+}
+
+.feature-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #DEE9FC;
+}
+
+.feature-description {
+    font-size: 16px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.feature-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
